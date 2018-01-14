@@ -18,7 +18,7 @@ class BookCell: UITableViewCell {
         super.awakeFromNib()
     }
     
-    func configUI(data: Book) {
+    func configUI(data: MyBook) {
         book.text = data.book
         author.text = data.author
         available.text = data.available ? "Available" : "Not Available"

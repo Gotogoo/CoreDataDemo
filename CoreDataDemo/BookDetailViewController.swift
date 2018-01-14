@@ -14,7 +14,7 @@ class BookDetailViewController: UIViewController {
     @IBOutlet weak var author: UILabel!
     @IBOutlet weak var available: UILabel!
     
-    var data: Book!
+    var data: MyBook!
     
     override func viewDidLoad() {
         super.viewDidLoad()

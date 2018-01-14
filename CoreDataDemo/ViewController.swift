@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import CoreData
 
-struct Book {
+struct MyBook {
     let book: String
     let author: String
     let available: Bool
@@ -19,7 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var username: UILabel!
     @IBOutlet weak var totalBooks: UILabel!
-    var books: [Book] = [Book(book: "book", author: "author", available: true)]
+    var books: [MyBook] = [MyBook(book: "book", author: "author", available: true)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +55,7 @@ class ViewController: UIViewController {
                 return
         }
         
-        let newBook = Book(book: book, author: author, available: true)
+        let newBook = MyBook(book: book, author: author, available: true)
         books.append(newBook)
         tableView.reloadData()
         updateOverView()
