@@ -15,6 +15,9 @@
 		F609DB28200A5C3600FE8907 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F609DB26200A5C3600FE8907 /* LaunchScreen.storyboard */; };
 		F609DB33200A5C3600FE8907 /* CoreDataDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F609DB32200A5C3600FE8907 /* CoreDataDemoTests.swift */; };
 		F609DB3E200A5C3600FE8907 /* CoreDataDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F609DB3D200A5C3600FE8907 /* CoreDataDemoUITests.swift */; };
+		F609DB4C200A68C800FE8907 /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F609DB4B200A68C800FE8907 /* BookCell.xib */; };
+		F609DB4E200A6ADD00FE8907 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F609DB4D200A6ADD00FE8907 /* BookCell.swift */; };
+		F609DB50200A7B9300FE8907 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F609DB4F200A7B9300FE8907 /* BookDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		F609DB39200A5C3600FE8907 /* CoreDataDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F609DB3D200A5C3600FE8907 /* CoreDataDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDemoUITests.swift; sourceTree = "<group>"; };
 		F609DB3F200A5C3600FE8907 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F609DB4B200A68C800FE8907 /* BookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
+		F609DB4D200A6ADD00FE8907 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		F609DB4F200A7B9300FE8907 /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				F609DB26200A5C3600FE8907 /* LaunchScreen.storyboard */,
 				F609DB29200A5C3600FE8907 /* Info.plist */,
 				F609DB21200A5C3600FE8907 /* CoreDataDemo.xcdatamodeld */,
+				F609DB4B200A68C800FE8907 /* BookCell.xib */,
+				F609DB4D200A6ADD00FE8907 /* BookCell.swift */,
+				F609DB4F200A7B9300FE8907 /* BookDetailViewController.swift */,
 			);
 			path = CoreDataDemo;
 			sourceTree = "<group>";
@@ -235,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F609DB4C200A68C800FE8907 /* BookCell.xib in Resources */,
 				F609DB28200A5C3600FE8907 /* LaunchScreen.storyboard in Resources */,
 				F609DB25200A5C3600FE8907 /* Assets.xcassets in Resources */,
 				F609DB20200A5C3600FE8907 /* Main.storyboard in Resources */,
@@ -262,9 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F609DB4E200A6ADD00FE8907 /* BookCell.swift in Sources */,
 				F609DB1D200A5C3600FE8907 /* ViewController.swift in Sources */,
 				F609DB23200A5C3600FE8907 /* CoreDataDemo.xcdatamodeld in Sources */,
 				F609DB1B200A5C3600FE8907 /* AppDelegate.swift in Sources */,
+				F609DB50200A7B9300FE8907 /* BookDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
