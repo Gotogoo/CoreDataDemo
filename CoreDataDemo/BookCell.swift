@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class BookCell: UITableViewCell {
 
@@ -18,9 +19,9 @@ class BookCell: UITableViewCell {
         super.awakeFromNib()
     }
     
-    func configUI(data: MyBook) {
-        book.text = data.book
-        author.text = data.author
-        available.text = data.available ? "Available" : "Not Available"
+    func configUI(data: NSManagedObject) {
+        book.text = data.value(forKey: BookKey.book.rawValue) as? String
+        author.text = data.value(forKey: BookKey.author.rawValue) as? String
+        available.text = data.value(forKey: BookKey.available.rawValue) as! Bool ? "Available" : "Not Available"
     }
 }
